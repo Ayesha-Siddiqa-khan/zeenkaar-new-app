@@ -1,0 +1,98 @@
+[
+  {
+    "id": "w-01",
+    "title": "Blush Lawn Co-ord",
+    "price": 4200,
+    "category": "Women",
+    "description": "Airy lawn two-piece with tonal polka embroidery and relaxed straight pants.",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    "id": "w-02",
+    "title": "Sage Breeze Kurta",
+    "price": 3800,
+    "category": "Women",
+    "description": "Soft cotton kurta with scalloped sleeves and contrast stitch detailing.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    "id": "w-03",
+    "title": "Rose Quartz Formal",
+    "price": 11500,
+    "category": "Women",
+    "description": "Handworked neckline, shimmer trousers, and organza dupatta for elevated evenings.",
+    "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    "id": "w-04",
+    "title": "Midnight Dew Set",
+    "price": 9800,
+    "category": "Women",
+    "description": "Navy co-ord with sheer overlay and pearl-sprinkled dupatta.",
+    "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": "w-05",
+    "title": "Ivory Dotted Shawl",
+    "price": 3500,
+    "category": "Women",
+    "description": "Lightweight shawl with tonal dotted jacquard and tassel edging.",
+    "image": "https://images.unsplash.com/photo-1496747611180-206a5c8c0e9a?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    "id": "w-06",
+    "title": "Blush Ombre Shawl",
+    "price": 3700,
+    "category": "Women",
+    "description": "Ombre blush shawl fading to nude with delicate tassels.",
+    "image": "https://images.unsplash.com/photo-1496747611180-206a5c8c0e9a?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "m-01",
+    "title": "Sand Classic Kurta",
+    "price": 4200,
+    "category": "Men",
+    "description": "Minimal sand-toned kurta with band collar and concealed placket.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": "m-02",
+    "title": "Slate Textured Kurta",
+    "price": 4400,
+    "category": "Men",
+    "description": "Textured slate kurta with tonal buttons and curved hem.",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    "id": "m-03",
+    "title": "Charcoal Waistcoat Set",
+    "price": 7800,
+    "category": "Men",
+    "description": "Charcoal waistcoat paired with crisp kurta-trouser set for formal events.",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1100&q=80"
+  },
+  {
+    "id": "m-04",
+    "title": "Olive Everyday Kurta",
+    "price": 3600,
+    "category": "Men",
+    "description": "Breathable cotton kurta in olive with subtle topstitch details.",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    "id": "k-01",
+    "title": "Mint Confetti Frock",
+    "price": 2800,
+    "category": "Kids",
+    "description": "Twirl-ready mint frock with dotted tulle overlay.",
+    "image": "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    "id": "k-02",
+    "title": "Sunrise Kurta Set",
+    "price": 2600,
+    "category": "Kids",
+    "description": "Light cotton kurta set with playful tassels and pastel stripes.",
+    "image": "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=900&q=80"
+  }
+]
