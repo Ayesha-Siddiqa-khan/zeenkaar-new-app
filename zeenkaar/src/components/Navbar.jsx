@@ -18,42 +18,44 @@ function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur animate-fadeIn">
-      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-4 sm:px-6 lg:px-12">
-        <Link
-          to="/"
-          className="flex items-center gap-3"
-          onClick={() => setOpen(false)}
-        >
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-rose-100 text-rose-600 shadow-inner">
-            <Sparkles size={18} />
-          </span>
-          <div className="leading-tight">
-            <p className="text-lg font-bold tracking-tight text-[#111111]">
-              Zeenkaar
-            </p>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-rose-500">
-              curated style
-            </p>
-          </div>
-        </Link>
+    <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/95 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur animate-fadeIn">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-12">
+        <div className="flex items-center gap-6">
+          <Link
+            to="/"
+            className="flex items-center gap-3"
+            onClick={() => setOpen(false)}
+          >
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-rose-100 text-rose-600 shadow-inner">
+              <Sparkles size={18} />
+            </span>
+            <div className="leading-tight">
+              <p className="text-lg font-bold tracking-tight text-[#111111]">
+                Zeenkaar
+              </p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-rose-500">
+                curated style
+              </p>
+            </div>
+          </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {navItems.map(({ to, label, end }) => (
-            <NavLink
-              key={to}
-              to={to}
-              end={end}
-              className={({ isActive }) =>
-                `${navLinkClass} ${isActive ? 'text-rose-600 after:w-full' : ''}`
-              }
-            >
-              {label}
-            </NavLink>
-          ))}
-        </nav>
+          <nav className="hidden items-center gap-6 md:flex">
+            {navItems.map(({ to, label, end }) => (
+              <NavLink
+                key={to}
+                to={to}
+                end={end}
+                className={({ isActive }) =>
+                  `${navLinkClass} ${isActive ? 'text-rose-600 after:w-full' : ''}`
+                }
+              >
+                {label}
+              </NavLink>
+            ))}
+          </nav>
+        </div>
 
-        <div className="ml-auto flex items-center gap-3">
+        <div className="flex items-center gap-3">
           <div className="hidden md:flex">
             <AuthButtons />
           </div>

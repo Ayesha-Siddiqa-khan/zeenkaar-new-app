@@ -49,12 +49,12 @@ function ProductCard({
           <div className="flex items-center gap-2">
             <motion.button
               onClick={handleFav}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:-translate-y-0.5 hover:border-rose-200 hover:bg-rose-50"
-              aria-label="Wishlist"
-              type="button"
-              whileTap={{ scale: 0.94 }}
-            >
-              <Heart
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-rose-200 bg-rose-50 text-rose-500 transition hover:-translate-y-0.5 hover:border-rose-300 hover:bg-rose-100"
+            aria-label="Wishlist"
+            type="button"
+            whileTap={{ scale: 0.94 }}
+          >
+            <Heart
                 size={18}
                 className={isFavorite ? 'fill-rose-500 text-rose-500' : 'text-slate-700'}
               />
