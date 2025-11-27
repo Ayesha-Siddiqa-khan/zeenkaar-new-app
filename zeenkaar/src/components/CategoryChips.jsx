@@ -13,8 +13,8 @@ function CategoryChips({ categories = DEFAULT_CATEGORIES, active, onChange }) {
             onClick={() => onChange?.(cat)}
             className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
               isActive
-                ? 'border-black bg-black text-white'
-                : 'border-slate-200 bg-white text-slate-700 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50'
+                ? 'border-transparent bg-gradient-to-r from-[#f500b8] to-[#ff8fd1] text-white shadow-[0_10px_30px_rgba(245,0,184,0.25)]'
+                : 'border-transparent bg-gradient-to-r from-[#f500b8] to-[#ff8fd1] text-white shadow-[0_6px_16px_rgba(245,0,184,0.25)] hover:-translate-y-0.5 hover:shadow-[0_10px_22px_rgba(245,0,184,0.3)]'
             }`}
             type="button"
             whileTap={{ scale: 0.95 }}
