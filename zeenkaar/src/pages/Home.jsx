@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Search } from 'lucide-react'
 import products from '../data/products.json'
 import ProductCard from '../components/ProductCard.jsx'
 import CategoryChips from '../components/CategoryChips.jsx'
+import SearchBar from '../components/SearchBar.jsx'
 
 const CATEGORY_OPTIONS = ['Trending', 'Women', 'Men', 'Kids', 'Accessories', 'All']
 
@@ -54,8 +54,8 @@ function Home() {
       animate={{ opacity: 1, transition: { duration: 0.4, ease: 'easeOut' } }}
     >
       {/* Hero */}
-      <section className="relative overflow-hidden rounded-[28px] bg-gradient-to-br from-[#2a1f55] via-[#4a2c7a] to-[#f6d8e8] shadow-xl ring-1 ring-slate-200 text-white">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(88,60,150,0.22),transparent_32%),radial-gradient(circle_at_80%_0%,rgba(255,214,232,0.18),transparent_30%)]" />
+      <section className="relative overflow-hidden rounded-[28px] bg-gradient-to-br from-[#2a1f55] via-[#4a2c7a] to-[#f3b5d4] shadow-xl ring-1 ring-slate-200 text-white">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(88,60,150,0.22),transparent_32%),radial-gradient(circle_at_80%_0%,rgba(243,181,212,0.24),transparent_30%)]" />
         <div className="relative mx-auto flex max-w-[1300px] flex-col gap-8 px-3 py-10 sm:px-4 lg:px-6 lg:py-12">
           <div className="grid items-center gap-8 lg:grid-cols-[0.45fr_0.55fr]">
             <div className="space-y-6">
@@ -125,16 +125,10 @@ function Home() {
       </section>
 
       {/* Search + Filters */}
-      <section className="rounded-3xl bg-white p-6 shadow-lg ring-1 ring-slate-200">
+      <section className="rounded-3xl bg-[#ffeaf3] p-6 shadow-lg ring-1 ring-[#f7cde0]">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="relative w-full max-w-xl">
-            <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-            <input
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search products"
-              className="w-full rounded-full border border-slate-200 bg-[#f9f9f9] px-11 py-3 text-sm text-slate-800 shadow-inner transition focus:border-rose-300 focus:bg-white focus:outline-none focus:ring-1 focus:ring-rose-200"
-            />
+            <SearchBar value={query} onChange={setQuery} placeholder="Search products" />
           </div>
           <CategoryChips
             categories={CATEGORY_OPTIONS}

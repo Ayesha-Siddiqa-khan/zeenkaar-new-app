@@ -26,6 +26,7 @@ function Shop() {
   const [sideFilter, setSideFilter] = useState('All')
   const [favorites, setFavorites] = useState(() => new Set())
   const [query, setQuery] = useState('')
+  const [showSidebar, setShowSidebar] = useState(false)
 
   const toggleFavorite = (id) => {
     setFavorites((prev) => {
@@ -100,7 +101,21 @@ function Shop() {
           </div>
           <div className="mt-6 flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-3">
-              <FiltersButton />
+              <FiltersButton onClick={() => setShowSidebar(true)} />
+                    {/* Mobile Sidebar Overlay */}
+                    {showSidebar && (
+                      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 lg:hidden">
+                        <div className="relative">
+                          <FilterSidebar active={sideFilter} onChange={setSideFilter} />
+                          <button
+                            className="absolute top-2 right-2 rounded-full bg-slate-200 px-2 py-1 text-xs font-bold text-slate-700 hover:bg-slate-300"
+                            onClick={() => setShowSidebar(false)}
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    )}
               <DribbbleTabs tabs={TAB_OPTIONS} active={activeTab} onChange={setActiveTab} />
             </div>
             <CategoryChips

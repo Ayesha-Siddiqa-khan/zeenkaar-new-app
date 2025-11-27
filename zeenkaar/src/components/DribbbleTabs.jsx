@@ -20,10 +20,11 @@ function DribbbleTabs({ tabs = DEFAULT_TABS, active, onChange }) {
             onClick={() => onChange?.(tab)}
             className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
               isActive
-                ? 'bg-[#f2f2f2] text-[#111111]'
-                : 'text-slate-700 hover:text-black'
+                ? 'bg-gradient-to-r from-[#f500b8] to-[#ff8fd1] text-white shadow-[0_10px_30px_rgba(245,0,184,0.25)]'
+                : 'border border-[#e6e7f3] bg-white text-[#4f5a73] hover:text-black'
             }`}
             whileTap={{ scale: 0.95 }}
+            whileHover={isActive ? { scale: 1.03 } : {}}
           >
             {tab}
           </motion.button>
